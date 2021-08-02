@@ -1,0 +1,27 @@
+{
+    "name": "swapi-graphql",
+    "version": "1.0.0",
+    "description": "Swapi Graphql Apollo Server",
+    "main": "dist/server.js",
+    "scripts": {
+        "start": "node dist/server.js",
+        "build": "tsc -p . && ncp src dist",
+        "test": "jest",
+        "build:dev": "nodemon src/server.ts --exec ts-node src/server.ts -e ts,graphql"
+    },
+    "author": "Lukorito",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/graphql": "^14.5.0",
+        "@types/node": "^16.4.8",
+        "nodemon": "^2.0.12",
+        "ts-node": "^10.1.0",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "apollo-datasource-rest": "^3.1.1",
+        "apollo-server": "^3.1.1",
+        "axios": "^0.21.1",
+        "graphql": "^15.5.1"
+    }
+}
