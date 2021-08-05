@@ -15,7 +15,7 @@ export interface IPeople {
     count: string;
     next: string;
     previous: string;
-    results: [string];
+    results: string[];
 }
 
 export interface IPerson {
@@ -41,8 +41,8 @@ export interface IPlanet {
     terrain: string
     surface_water: string
     population: string
-    residents: [string]
-    films: [string]
+    residents: string[]
+    films: string[]
     created: string
     edited: string
     url: string
